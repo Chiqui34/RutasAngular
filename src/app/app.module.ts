@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { PotionsListComponent } from './entities/potions/potions-list/potions-list.component';
+import { PotionDetailComponent } from './entities/potions/potion-detail/potion-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    PotionsListComponent
+    PotionsListComponent,
+    PotionDetailComponent
   ],
   imports: [
     BrowserModule,
