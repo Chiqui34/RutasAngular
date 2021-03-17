@@ -44,11 +44,21 @@ h1 {
   width: 75px;
 }
 
-.pocionNombre {
+.col-10 {
+  width: 450px;
+}
+
+.col-10 > .pocionNombre {
   padding-left: 20px;
   font-weight: bold;
 }
 
 .pocionDescripcion {
   padding-left: 20px;
+}
+
+a {
+  display: inherit;
+  text-decoration: none;
+  color: black;
 }
