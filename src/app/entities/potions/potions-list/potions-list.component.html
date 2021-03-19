@@ -22,7 +22,7 @@
          </div>
 
          <!--Contenedor descripción-->
-         <div class="col-10">
+         <div class="col-8">
 
             <div class="pocionNombre">
                {{pocion.nombre}}
@@ -31,6 +31,14 @@
                {{pocion.descripcion}}
             </div>
          </div>
+
+         <!--Contenedor imagen épica-->
+         <div class="col-2">
+            <div class="potionImagen" *ngIf="pocion.esEpica">
+               <img src="../../../../assets/imgs/epica75.png" alt="epica">
+            </div>
+         </div>
+
       </a>
    </div>
 
@@ -45,13 +53,19 @@
          </div>
 
          <!--Contenedor descripción-->
-         <div class="col-10">
+         <div class="col-8">
 
             <div class="pocionNombre">
                {{pocion.nombre}}
             </div>
             <div class="pocionDescripcion">
                {{pocion.descripcion}}
+            </div>
+         </div>
+         <!--Contenedor imagen épica-->
+         <div class="col-2">
+            <div class="potionImagen" *ngIf="pocion.esEpica">
+               <img src="../../../../assets/imgs/epica75.png" alt="epica">
             </div>
          </div>
       </a>
@@ -68,13 +82,19 @@
          </div>
 
          <!--Contenedor descripción-->
-         <div class="col-10">
+         <div class="col-8">
 
             <div class="pocionNombre">
                {{pocion.nombre}}
             </div>
             <div class="pocionDescripcion">
                {{pocion.descripcion}}
+            </div>
+         </div>
+         <!--Contenedor imagen épica-->
+         <div class="col-2">
+            <div class="potionImagen" *ngIf="pocion.esEpica">
+               <img src="../../../../assets/imgs/epica75.png" alt="epica">
             </div>
          </div>
       </a>
