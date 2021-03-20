@@ -25,7 +25,7 @@ export class PotionService {
     '../../../assets/imgs/pociones/t_03.PNG', POTIONTYPE.VIDA, false);
     potions.push(pocion03);
 
-    const pocion04: Potion = new Potion(4, 'Poción de maná mayor', 'Proporciona la habilidadde volar durante 5 minutos', 
+    const pocion04: Potion = new Potion(4, 'Poción de maná mayor', 'Proporciona la habilidad de volar durante 5 minutos', 
     '../../../assets/imgs/pociones/t_01.PNG', POTIONTYPE.MANA, false);
     potions.push(pocion04);
 

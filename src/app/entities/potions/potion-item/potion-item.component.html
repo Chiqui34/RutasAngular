@@ -1,0 +1,22 @@
+<a [routerLink]="['/pociones', pocionInterior.id]" routerLinkActive="router-link-active">
+   <div class="col-2">
+      <div class="pocionImagen">
+         <img [src]="pocionInterior.urlImagen" alt="pocion">
+      </div>
+   </div>
+   <!--Contenedor descripción-->
+   <div class="col-8">
+      <div class="pocionNombre">
+         {{pocionInterior.nombre}}
+      </div>
+      <div class="pocionDescripcion">
+         {{pocionInterior.descripcion}}
+      </div>
+   </div>
+   <!--Contenedor imagen épica-->
+   <div class="col-2">
+      <div class="potionImagen" *ngIf="pocionInterior.esEpica">
+         <img src="../../../../assets/imgs/epica75.png" alt="epica">
+      </div>
+   </div>
+</a>
