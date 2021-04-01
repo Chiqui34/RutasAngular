@@ -6,9 +6,13 @@ a {
   color: black;
 }
 
+.col-2 {
+  padding: 0px;
+}
+
 .col-8 {
-  padding-left: 40px;
-  width: 400px;
+  padding-left: 20px;
+  width: 500px;
 }
 
 .pocionImagen {

@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Potion, POTIONTYPE } from './potion-model';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +10,7 @@ import { Potion, POTIONTYPE } from './potion-model';
 
 export class PotionService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   public getAllPosition(): Potion[]{
 
@@ -44,8 +47,12 @@ export class PotionService {
   public getPotionsByType(tipo: POTIONTYPE): Potion[]{
     const arrayPocion = this.getAllPosition();
     const tipoPocion = arrayPocion.filter(arrayTipo => arrayTipo.tipo === tipo );
-    //return arrayPocion.filter(arrayTipo => arrayTipo.tipo === tipo );
     return tipoPocion;
+  }
+
+  public obtenerPociones(): Observable<Potion[]>{
+    const urlEndPoint = "http://localhost:8080/api/pociones"
+    return this.http.get<Potion[]>(urlEndPoint);
   }
 
 }
