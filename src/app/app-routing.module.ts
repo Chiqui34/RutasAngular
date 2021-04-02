@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: 'pociones', component: PotionsListComponent},
   {path: 'pociones/:idpocion', component: PotionDetailComponent},
-  {path: 'pocionesH2', component: PotionListH2Component}
+  {path: 'pocionesH2', component: PotionListH2Component},
+  {path: 'pocionesPostG', component: PotionListH2Component}
 ];
 
 @NgModule({
