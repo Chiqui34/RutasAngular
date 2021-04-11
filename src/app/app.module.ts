@@ -9,7 +9,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { PotionsListComponent } from './entities/potions/potions-list/potions-list.component';
 import { PotionDetailComponent } from './entities/potions/potion-detail/potion-detail.component';
 import { PotionItemComponent } from './entities/potions/potion-item/potion-item.component';
-import { PotionListH2Component } from './entities/potions/potion-list-h2/potion-list-h2.component';
+import { PotionListBDComponent } from './entities/potions/potion-list-bd/potion-list-bd.component';
+import { PotionItemBdComponent } from './entities/potions/potion-item-bd/potion-item-bd.component';
+import { PotionListPostGresqlComponent } from './entities/potions/potion-list-post-gresql/potion-list-post-gresql.component';
 
 
 
@@ -21,7 +23,9 @@ import { PotionListH2Component } from './entities/potions/potion-list-h2/potion-
     PotionsListComponent,
     PotionDetailComponent,
     PotionItemComponent,
-    PotionListH2Component
+    PotionListBDComponent,
+    PotionItemBdComponent,
+    PotionListPostGresqlComponent
   ],
   imports: [
     BrowserModule,

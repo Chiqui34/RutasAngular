@@ -51,8 +51,9 @@ export class PotionService {
   }
 
   public obtenerPociones(): Observable<Potion[]>{
-    const urlEndPoint = "http://localhost:8080/api/pociones"
+    const urlEndPoint = "http://localhost:8080/api/pociones";
     return this.http.get<Potion[]>(urlEndPoint);
   }
+
 
 }

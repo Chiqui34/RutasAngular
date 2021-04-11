@@ -6,16 +6,16 @@ export enum POTIONTYPE {
 
 export class Potion {
    id: number;
-   nombre:string;
+   titulo:string;
    descripcion: string;
    urlImagen: string;
    tipo: POTIONTYPE;
    esEpica: boolean;
 
-   constructor(id:number, nombre:string, descripcion:string, urlImagen: string,
+   constructor(id:number, titulo:string, descripcion:string, urlImagen: string,
        tipo: POTIONTYPE, esEpica: boolean) {
       this.id = id;
-      this.nombre = nombre;
+      this.titulo = titulo;
       this.descripcion = descripcion;
       this.urlImagen = urlImagen;
       this.tipo = tipo;

@@ -1,0 +1,33 @@
+<div class="row">
+   <div class="col-md-6 text-center">
+      <div class="imagenAnime">
+         <img src="../../../../assets/imgs/human_mage.png" alt="magica">
+      </div>
+   </div>
+
+   <!--Tarjeta de poción-->
+   <div class="col-md-6">
+      <h1>Poción de mana</h1>
+      <div class="row pocionCard" *ngFor="let pocion of pociones;">
+         <div *ngIf="pocion.tipo as MANA">
+            <app-potion-item [pocionInterior]='pocion'></app-potion-item>
+         </div>
+      </div>
+<!--
+      <h1>Poción de vida</h1>
+      <div class="row pocionCard" *ngFor="let pocion of pociones;">
+         <span *ngIf="pocion.tipo as VIDA">
+            <app-potion-item [pocionInterior]='pocion'></app-potion-item>
+         </span>
+      </div>
+
+      <h1>Poción de energía</h1>
+      <div class="row pocionCard" *ngFor="let pocion of pociones;">
+         <span *ngIf="pocion.tipo as ENERGIA">
+            <app-potion-item [pocionInterior]='pocion'></app-potion-item>
+         </span>
+      </div>
+-->
+   </div>
+
+</div>
