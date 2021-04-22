@@ -8,15 +8,34 @@
    <!--Tarjeta de poción-->
    <div class="col-md-6">
       <h1>Poción de mana</h1>
-      <div class="row pocionCard" *ngFor="let pocion of pociones;">
-         <div *ngIf="pocion.tipo as MANA">
-            <app-potion-item [pocionInterior]='pocion'></app-potion-item>
-         </div>
+      <div class="row pocionCard" *ngFor="let pocion of pocionesMana;">
+         <app-potion-item [pocionInterior]='pocion'></app-potion-item>         
       </div>
+
+      <h1>Poción de vida</h1>
+      <div class="row pocionCard" *ngFor="let pocion of pocionesVida;">
+         <app-potion-item [pocionInterior]='pocion'></app-potion-item>
+      </div>
+
+      <h1>Poción de energia</h1>
+      <div class="row pocionCard" *ngFor="let pocion of pocionesEnergia;">
+         <app-potion-item [pocionInterior]='pocion'></app-potion-item>
+      </div>
+   </div>   
+
+</div>
+
+
 <!--
+
+<pre>{{pocionesMana|json}}</pre>
+<pre>{{pocionesEnergia|json}}</pre>
+<pre>{{pociones|json}}</pre>
+
+
       <h1>Poción de vida</h1>
       <div class="row pocionCard" *ngFor="let pocion of pociones;">
-         <span *ngIf="pocion.tipo as VIDA">
+         <span *ngIf="pocion.tipo.toString() == 'VIDA'">
             <app-potion-item [pocionInterior]='pocion'></app-potion-item>
          </span>
       </div>
@@ -28,6 +47,4 @@
          </span>
       </div>
 -->
-   </div>
 
-</div>

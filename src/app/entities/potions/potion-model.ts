@@ -1,7 +1,7 @@
 export enum POTIONTYPE {
-   VIDA,
-   MANA,
-   ENERGIA
+  VIDA,
+  MANA,
+  ENERGIA
 }
 
 export class Potion {
